@@ -10,20 +10,28 @@
     <h1> OMG! YOU WILL NOT BELIEVE ME BUT...</h1>
     <p id="excusa"></p>
     <script>
+        var excusa = [
+            "No pude hacerlo porque se me olvido la contraseña",
+            "Mi perro se comio mi tarea",
+            "Se me cayo mi telefono al inodoro",
+            "No pude hacerlo porque mi abuela estaba uando la computadora",
+            "Estaba lloviendo y no queria mojarme",
+            "Me quede dormido y se me paso la hora",
+            "La impresora se quedo sin tinta",
+            "Mi computadora se congelo y no puse guardar mi trabajo",
+            "Me robaron mi mochila con todo lo que se necesitaba",
+            "No pude hacerlo porque mi hermano estaba usando la computadora",
+            "El trafico estaba terrible y llegue tarde",
+            "Me perdi en el camino",
+            "No pude hacerlo porque mi internet estaba lento"
 
-    let who = ['The dog','My grandma','His turtle','My bird'];
-    let action = ['ate','peed','crushed','broke'];
-    let what = ['my homework', 'the keys', 'the car'];
-    let when = ['before the class','right on time','when I finished','during my lunch','while I was praying'];
-
-    return who+action+whatwhen;
-        
+        ];
 
         function onLoad(); {
             var randomIndex = math.floor(math.random() * excusas.lenght);
             return [randomIndex];
         }
-        console.log(onLoad)
+        document.getElementById("excusa").innerHTML = obtenerExcusa();
     </script>
 </body>
 
